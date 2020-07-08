@@ -1,4 +1,4 @@
-package com.heading.app;
+package com.heading.examples.iostreams;
 
 import java.io.*;
 
@@ -14,7 +14,7 @@ public class Main {
 
     public static String createInputStreamFromClassPath() throws IOException {
         Class clazz = Main.class;
-        InputStream inputStream = clazz.getResourceAsStream("source.txt");
+        InputStream inputStream = clazz.getResourceAsStream("../../resources/source.txt");
         String data = readFromInputStream(inputStream);
 
         return data;
